@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Brian Cruz Sanchez</title>
+
+  <!-- //Google Fonts Ubuntu Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+<header>
+  <!-- La clase -->
+  <h1 class="typed"></h1>
+</header>
+</body>
+
+<!-- Estilos css -->
+<style>
+  body {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+</style>
+
+<!-- Libreria para la animacion -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<!-- Scrip que hace la animacion -->
+<script>
+  const typed = new Typed('.typed', {
+    strings: [
+      '<h1>Hola!!</h1>',
+      '<h1>Me llamo Brian Cruz Sanchez</h1>',
+      '<h1>Pongame 10</h1>'
+    ],
+
+    typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+    startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+    backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+    smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+    shuffle: false, // Alterar el orden en el que escribe las palabras.
+    backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+    loop: true, // Repetir el array de strings
+    loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+    showCursor: false, // Mostrar cursor palpitanto
+    cursorChar: '|', // Caracter para el cursor
+    contentType: 'html', // 'html' o 'null' para texto sin formato
+  });
+</script>
+
+</html>

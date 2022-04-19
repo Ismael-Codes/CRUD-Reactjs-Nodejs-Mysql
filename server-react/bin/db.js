@@ -7,6 +7,8 @@ var connection = mysql.createConnection({
     database: 'db_mhs'
 });
 
+
+
 connection.connect(function (err) {
     // connection.end();
     if (!err) {
